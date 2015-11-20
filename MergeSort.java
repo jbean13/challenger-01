@@ -70,30 +70,4 @@ public class MergeSort {
         
     }
     
-/* This is a copied version
-    public int[] merge(int[] left, int[] right) {
-        int len = left.length + right.length;
-        int [] result = new int[len];
-        int indexLeft=0, indexRight=0, indexResult=0;
-        
-        while (indexLeft < left.length || indexRight < right.length) {
-            
-            if (indexLeft < left.length && indexRight < right.length) {
-                if (left[indexLeft] <= right[indexRight]) {
-                    result[indexResult] = left[indexLeft];
-                    indexLeft++; indexResult++;
-                } else {
-                    result[indexResult] = right[indexRight];
-                    indexRight++; indexResult++;
-                }
-            } else if (indexLeft < left.length) {
-                result[indexResult] = left[indexLeft];
-                indexResult++; indexLeft++;
-            } else if (indexRight < right.length) {
-                result[indexResult] = right[indexRight];
-                indexResult++; indexRight++;
-            }
-        }
-        return result;
-    }*/
 }
